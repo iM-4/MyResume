@@ -1,0 +1,180 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; 
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: block;
+    padding: 5px 0;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+    transform: scale(1.1);
+}
+
+header {
+    text-align: center;
+    padding: 5% 3%;
+    background-color: #282c34;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.ProjectDetails {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    max-width: 85%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Tablets and medium-sized screens */
+@media (max-width: 992px) {
+    body {
+        font-size: 15px;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .ProjectDetails {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    nav {
+        padding: 5px 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    header {
+        padding: 30px 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+    
+    .ProjectDetails {
+        padding: 15px;
+        margin: 30px auto;
+        max-width: 90%;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    header {
+        padding: 25px 10px;
+    }
+    
+    header h1 {
+        font-size: 1.6em;
+    }
+    
+    .ProjectDetails {
+        padding: 12px;
+        margin: 20px auto;
+        max-width: 92%;
+        line-height: 1.4;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 480px) and (orientation: landscape) {
+    header {
+        padding: 15px 10px;
+    }
+    
+    .ProjectDetails {
+        margin: 15px auto;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+    .ProjectDetails {
+        max-width: 1000px;
+    }
+    
+    header {
+        padding: 60px;
+    }
+}
